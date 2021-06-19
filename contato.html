@@ -24,16 +24,16 @@
         <div>
             <form>
                 <label for="nome">Nome:</label><br>
-                <input type="text" id="nome">
-                <br>
+                <input type="text" id="nome" onkeyup='validaNome()'>
+                <div id="txtNome"></div>
                 <br>
                 <label for="email">Email:</label><br>
-                <input type="email" id="email"> <!-- type="email" já valida @ e .com -->
-                <br>
+                <input type="email" id="email" onkeyup='validaEmail()'> <!-- type="email" já valida @ e .com -->
+                <div id="txtEmail"></div>
                 <br>
                 <label for="assunto">Assunto:</label><br>
-                <textarea type="text" id="assunto" cols="60" rows="5"></textarea>
-                <br>
+                <textarea type="text" id="assunto" cols="60" rows="5" onkeyup='validaAssunto()'></textarea>
+                <div id="txtAssunto"></div>
                 <br>
                 <button>Enviar</button>
             </form>
@@ -66,6 +66,7 @@
         </p>
     </footer>
 
+    <script src="assets/js/script.js"></script>
 
 </body>
 
